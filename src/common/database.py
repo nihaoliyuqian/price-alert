@@ -5,13 +5,13 @@ import pymongo
 
 
 class Database(object):
-    URI = "mongodb+srv://yuqian:mm13679097617@cluster0.elaws.mongodb.net/test"
+    URI = "mongodb+srv://yuqian:mm13679097617@microblog.mhgtu.mongodb.net/test?authSource=admin&replicaSet=atlas-d1z9s7-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true"
     DATABASE = None
 
     @staticmethod
     def initialize():
         client = pymongo.MongoClient(Database.URI)
-        Database.DATABASE = client.get_default_database()
+        Database.DATABASE = client["microblog"]
 
     @staticmethod
     def insert(collection, data):
