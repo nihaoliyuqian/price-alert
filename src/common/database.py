@@ -11,7 +11,7 @@ class Database(object):
     @staticmethod
     def initialize():
         client = pymongo.MongoClient(Database.URI)
-        Database.DATABASE = client["microblog"]
+        Database.DATABASE = client["price_alert"]
 
     @staticmethod
     def insert(collection, data):
