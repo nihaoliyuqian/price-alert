@@ -5,7 +5,7 @@ import pymongo
 
 
 class Database(object):
-    URI = "mongodb+srv://yuqian:mm13679097617@microblog.mhgtu.mongodb.net/test?authSource=admin&replicaSet=atlas-d1z9s7-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true"
+    URI = "mongodb+srv://yuqian:mm13679097617@microblog.mhgtu.mongodb.net/test"
     DATABASE = None
 
     @staticmethod
