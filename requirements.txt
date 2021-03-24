@@ -5,3 +5,4 @@ requests==2.8.0
 passlib==1.6.5
 uwsgi
 pymongo[srv]
+dnspython
